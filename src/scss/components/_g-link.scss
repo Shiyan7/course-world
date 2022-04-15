@@ -1,0 +1,22 @@
+.g-link {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19.5px;
+  transition: color 0.3s;
+
+  &--black {
+    color: var(--color-text);
+
+    @include hover {
+      color: var(--color-primary);
+    }
+  }
+
+  &--blue {
+    color: var(--color-primary);
+
+    @include hover {
+      color: var(--color-text);
+    }
+  }
+}

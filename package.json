@@ -3,6 +3,7 @@
   "version": "2.0.4",
   "description": "gulp-builder for weblayout",
   "main": "gulpfile.js",
+  "homepage": "https://shiyan7.github.io/course-world/",
   "scripts": {
     "html": "node-w3c-validator -f lint -evH -i app/**/*.html",
     "dev": "gulp",

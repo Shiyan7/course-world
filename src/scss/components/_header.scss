@@ -1,0 +1,63 @@
+.header {
+  position: relative;
+  width: 100%;
+  box-shadow: 0 3px 40px rgba(27, 39, 90, 10%);
+
+  @media (max-width: 1024px) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  @media (max-width: 576px) {
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+
+  &__nav {
+    padding-right: 22px;
+
+    @media (max-width: 1024px) {
+      padding-right: 0;
+    }
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1355px;
+  }
+
+  &__logo {
+    display: block;
+    width: 251px;
+    height: 44px;
+
+    @media (max-width: 1024px) {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 211px;
+      height: 40px;
+      transform: translate(-50%, -50%);
+    }
+
+    @media (max-width: 576px) {
+      width: 154px;
+      height: 28px;
+    }
+
+    @media (max-width: 375px) {
+      width: 126px;
+      height: 23px;
+    }
+  }
+
+  &__burger {
+    display: none;
+
+    @media (max-width: 1024px) {
+      display: block;
+    }
+  }
+}

@@ -5,12 +5,7 @@
 @import "settings";
 
 // подключения компонентов страницы
+@import "./components/g-link";
 @import "./components/header";
-
-// тестовые стили, удалите их
-.page__body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: var(--vh);
-}
+@import "./components/nav";
+@import "./components/burger";

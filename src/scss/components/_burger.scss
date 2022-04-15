@@ -1,0 +1,96 @@
+.burger {
+  --burger-width: 32px;
+  --burger-height: 32px;
+  --burger-line-width: 10px;
+  --burger-line-height: 2px;
+  --top-offset: 10px;
+  --left-offset: 9px;
+  --duration: 0.3s ease-in-out;
+
+  position: relative;
+  border: none;
+  border-radius: 100%;
+  padding: 0;
+  width: var(--burger-width);
+  height: var(--burger-height);
+  box-shadow: 0 2px 8px rgba(27, 39, 90, 0.12);
+  color: var(--color-text);
+  background-color: #fff;
+  cursor: pointer;
+
+  @media (min-width: 577px) {
+    --burger-width: 50px;
+    --burger-height: 50px;
+    --burger-line-width: 13px;
+    --burger-line-height: 3px;
+    --top-offset: 16px;
+    --left-offset: 15px;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: var(--left-offset);
+    border-radius: 5px;
+    width: var(--burger-line-width);
+    height: var(--burger-line-height);
+    background-color: currentColor;
+    transition: transform var(--duration), top var(--duration), width var(--duration), left var(--duration);
+  }
+
+  &::before {
+    top: var(--top-offset);
+    width: 14px;
+
+    @media (min-width: 577px) {
+      width: 20px;
+    }
+  }
+
+  &::after {
+    top: calc(100% - var(--burger-line-height) - var(--top-offset));
+  }
+
+  &__line {
+    position: absolute;
+    left: var(--left-offset);
+    top: 50%;
+    border-radius: 5px;
+    width: var(--burger-line-width);
+    height: var(--burger-line-height);
+    background-color: currentColor;
+    transform: translateY(-50%);
+    transition: opacity var(--duration), visibility var(--duration);
+  }
+
+  &--active {
+    &::before {
+      top: 15.5px;
+      transform: rotate(45deg);
+
+      @media (min-width: 577px) {
+        left: 12.5px;
+        top: 24.5px;
+        width: 25px;
+      }
+    }
+
+    &::after {
+      top: 16px;
+      width: 14px;
+      transform: rotate(-45deg) translateY(-50%);
+
+      @media (min-width: 577px) {
+        left: 12.5px;
+        top: 25px;
+        width: 25px;
+      }
+    }
+
+    .burger__line {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+}
