@@ -34,7 +34,7 @@
     &.open {
       background-color: #f7f7f7;
 
-      .menu-item__caption {
+      .menu-item__link {
         color: var(--color-primary);
       }
 
@@ -59,9 +59,10 @@
       margin-right: 12px;
       width: 32px;
       height: 32px;
+      pointer-events: none;
     }
 
-    &__caption {
+    &__link {
       font-weight: 500;
       font-size: 13px;
       line-height: 30px;
@@ -76,6 +77,7 @@
       fill: #c3c7d3;
       transform: rotate(90deg);
       transition: transform var(--duration);
+      pointer-events: none;
     }
   }
 
