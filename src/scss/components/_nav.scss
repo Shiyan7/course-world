@@ -139,6 +139,10 @@
     padding-top: 27px;
     padding-bottom: 29px;
 
+    &:not(:last-child) {
+      margin-right: 41px;
+    }
+
     &:hover,
     &:focus-within {
       .nav-dropdown {
@@ -147,19 +151,15 @@
       }
     }
 
-    &:not(:last-child) {
-      margin-right: 41px;
+    &--dropdown {
+      @media (max-width: 1024px) {
+        display: none;
+      }
     }
 
     @media (max-width: 1024px) {
       padding-top: 0;
       padding-bottom: 0;
-    }
-
-    &--dropdown {
-      @media (max-width: 1024px) {
-        display: none;
-      }
     }
   }
 
@@ -195,6 +195,7 @@
     position: absolute;
     left: 0;
     top: calc(100% + var(--offset));
+    z-index: 20;
     padding-top: 20px;
     padding-bottom: 20px;
     min-width: var(--width);

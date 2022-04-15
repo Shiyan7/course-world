@@ -1,0 +1,45 @@
+.hero {
+  &__container {
+    padding-top: 90px;
+    padding-bottom: 120px;
+
+    @media (max-width: 1024px) {
+      padding-top: 40px;
+      padding-bottom: 70px;
+    }
+
+    @media (max-width: 576px) {
+      padding-top: 0;
+      padding-bottom: 30px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 32px;
+
+    @media (max-width: 1024px) {
+      display: none;
+    }
+  }
+
+  &__search-form {
+    margin: 0 auto 22px;
+
+    @media (max-width: 1024px) {
+      max-width: 700px;
+    }
+
+    @media (max-width: 576px) {
+      margin-bottom: 16px;
+    }
+
+    @media (max-width: 375px) {
+      margin-bottom: 13px;
+    }
+  }
+
+  &__search-tags {
+    margin: 0 auto;
+    max-width: 915px;
+  }
+}
