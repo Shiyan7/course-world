@@ -1,0 +1,37 @@
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  padding-top: 35px;
+  padding-bottom: 15px;
+
+  &__item {
+    position: relative;
+
+    &:not(:last-child) {
+      margin-right: 25px;
+      padding-right: 25px;
+
+      &:after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 50%;
+        border-radius: 100%;
+        width: 6px;
+        height: 6px;
+        background-color: var(--color-text);
+        opacity: 0.2;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  &__link {
+    color: var(--color-text-light);
+    transition: color 0.3s;
+
+    &[href]:hover {
+      color: var(--color-primary);
+    }
+  }
+}
