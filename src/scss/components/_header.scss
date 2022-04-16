@@ -14,6 +14,11 @@
     padding-bottom: 13px;
   }
 
+  &__left {
+    display: flex;
+    align-items: center;
+  }
+
   &__nav {
     padding-right: 22px;
 
@@ -27,12 +32,21 @@
     align-items: center;
     justify-content: space-between;
     max-width: 1355px;
+
+    &--fluid {
+      max-width: 1800px;
+    }
   }
 
   &__logo {
     display: block;
+    margin-right: 60px;
     width: 251px;
     height: 44px;
+
+    @media (max-width: 1280px) {
+      margin-right: 0;
+    }
 
     @media (max-width: 1024px) {
       position: absolute;
@@ -59,6 +73,21 @@
 
     @media (max-width: 1024px) {
       display: block;
+    }
+  }
+
+  &__search-form {
+
+    .just-validate-error-label {
+      display: none;
+    }
+
+    @media (max-width: 1680px) {
+      max-width: 400px;
+    }
+
+    @media (max-width: 1280px) {
+      display: none;
     }
   }
 }

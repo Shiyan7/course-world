@@ -1,6 +1,7 @@
 .search-form {
   position: relative;
   max-width: 609px;
+  width: 100%;
 
   &--lg {
 
@@ -161,7 +162,7 @@
 
 .just-validate-error-label {
   margin-top: 5px;
-  padding-left: 22px;
+  padding-left: 24px;
   font-size: 12px;
   line-height: 15px;
 }

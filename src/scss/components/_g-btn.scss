@@ -24,7 +24,8 @@
     fill: currentColor;
   }
 
-  &:hover {
+  &:hover,
+  &:focus-within {
     border: 1px solid currentColor;
     color: var(--color-primary);
   }
@@ -33,7 +34,8 @@
     border: 1px solid currentColor;
     color: var(--color-primary);
 
-    &:hover {
+    &:hover,
+    &:focus-within {
       color: #fff;
       background-color: var(--color-primary);
     }
@@ -43,7 +45,8 @@
     color: #fff;
     background-color: var(--color-primary);
 
-    &:hover {
+    &:hover,
+    &:focus-within {
       color: #fff;
       background-color: #2334b2;
     }

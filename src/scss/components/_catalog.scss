@@ -17,7 +17,7 @@
   &.open {
 
     .filter__btn svg {
-      transform: rotate(-90deg);
+      transform: rotate(0deg);
     }
 
     .filter-content {
@@ -38,8 +38,8 @@
       display: block;
       width: 13px;
       height: 9px;
-      fill: #d0d8eb;
-      transform: rotate(90deg);
+      transform: rotate(180deg);
+      transition: transform 0.3s;
     }
   }
 
