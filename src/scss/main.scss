@@ -6,10 +6,15 @@
 
 // подключения компонентов страницы
 @import "./components/g-link";
+@import "./components/g-checkbox";
 @import "./components/burger";
 @import "./components/g-title";
 @import "./components/search-form";
 @import "./components/breadcrumbs";
+@import "./components/noUi";
+@import "./components/g-input";
+@import "./components/g-btn";
+@import "./components/g-radio";
 @import "./components/header";
 @import "./components/nav";
 @import "./components/hero";
@@ -19,3 +24,5 @@
 @import "./components/info";
 @import "./components/footer";
 @import "./components/categories";
+@import "./components/category";
+@import "./components/catalog";

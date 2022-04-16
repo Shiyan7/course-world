@@ -1,0 +1,44 @@
+.noUi-horizontal {
+  height: 4px;
+}
+
+.noUi-target {
+  border: none;
+  box-shadow: none;
+  background-color: #e1e4ef;
+}
+
+.noUi-connect {
+  background-color: var(--color-primary);
+}
+
+.noUi-horizontal .noUi-handle {
+  right: 0;
+  top: -6px;
+  width: 16px;
+  height: 16px;
+}
+
+.noUi-handle {
+  right: 0;
+  border: none;
+  border-radius: 100px;
+  box-shadow: 0 1px 2px rgba(145, 158, 171, 70%);
+  background-color: #f9fafb;
+  cursor: pointer;
+}
+
+.noUi-handle::after,
+.noUi-handle::before {
+  display: none;
+}
+
+.noUi-handle:focus {
+  outline: none;
+  background-color: #f9fafb;
+}
+
+.noUi-connect,
+.noUi-origin {
+  width: calc(100% - 16px);
+}

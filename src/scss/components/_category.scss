@@ -1,0 +1,18 @@
+.category {
+
+  &__container {
+    padding-bottom: 80px;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+  }
+
+  &__desc {
+    margin: 0;
+    margin-bottom: 48px;
+    font-size: 15px;
+    line-height: 28px;
+    color: var(--color-text);
+  }
+}

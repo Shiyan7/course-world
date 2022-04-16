@@ -1,0 +1,71 @@
+.catalog {
+  display: flex;
+}
+
+.filters {
+  width: 240px;
+
+  &__reset {
+    color: #8c96af;
+  }
+}
+
+.filter {
+  margin-bottom: 36px;
+  width: 100%;
+
+  &.open {
+
+    .filter__btn svg {
+      transform: rotate(-90deg);
+    }
+
+    .filter-content {
+      display: block;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+
+    svg {
+      display: block;
+      width: 13px;
+      height: 9px;
+      fill: #d0d8eb;
+      transform: rotate(90deg);
+    }
+  }
+
+  &-content {
+    display: none;
+    margin-top: 13px;
+
+    &__item {
+      &:not(:last-child) {
+        margin-bottom: 12px;
+      }
+    }
+  }
+}
+
+.filter-slider {
+  &__wrapper {
+    display: flex;
+    margin-bottom: 15px;
+  }
+
+  &__input {
+    width: 100%;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+}

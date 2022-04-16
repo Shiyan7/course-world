@@ -66,11 +66,23 @@
     color: var(--color-text);
     background: #fff;
 
+    &.is-invalid {
+      border: 2px solid var(--color-red);
+
+      &::placeholder {
+        color: var(--color-red);
+      }
+
+      & ~ .search-form__btn {
+        background-color: var(--color-red);
+      }
+    }
+
     &::placeholder {
       color: #a5a5ad;
     }
 
-    &:focus {
+    &:focus:not(.is-invalid) {
       border: 2px solid var(--color-primary);
     }
 
@@ -145,4 +157,11 @@
       color: var(--color-primary);
     }
   }
+}
+
+.just-validate-error-label {
+  margin-top: 5px;
+  padding-left: 22px;
+  font-size: 12px;
+  line-height: 15px;
 }

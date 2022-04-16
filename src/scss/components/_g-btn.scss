@@ -1,0 +1,51 @@
+.g-btn {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #e4e6ef;
+  border-radius: 10px;
+  padding: 12.5px 40px 13.5px;
+  min-width: 170px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: var(--color-text);
+  transition: background-color 0.3s, color 0.3s, border 0.3s;
+
+  &[disabled] {
+    opacity: 0.7;
+    pointer-events: none;
+  }
+
+  svg {
+    display: block;
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+  }
+
+  &:hover {
+    border: 1px solid currentColor;
+    color: var(--color-primary);
+  }
+
+  &--stroke {
+    border: 1px solid currentColor;
+    color: var(--color-primary);
+
+    &:hover {
+      color: #fff;
+      background-color: var(--color-primary);
+    }
+  }
+
+  &--fill {
+    color: #fff;
+    background-color: var(--color-primary);
+
+    &:hover {
+      color: #fff;
+      background-color: #2334b2;
+    }
+  }
+}
