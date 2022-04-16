@@ -2,9 +2,21 @@
 
   &__container {
     padding-bottom: 90px;
+
+    @media (max-width: 768px) {
+      padding-bottom: 60px;
+    }
+
+    @media (max-width: 576px) {
+      padding-bottom: 20px;
+    }
   }
 
   &__title {
     margin-bottom: 31px;
+
+    @media (max-width: 576px) {
+      margin-bottom: 20px;
+    }
   }
 }

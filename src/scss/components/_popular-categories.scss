@@ -82,6 +82,16 @@
 }
 
 .category-links {
+
+  @media (max-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 576px) {
+    grid-template-columns: 1fr;
+  }
+
   &__item {
     &:not(:last-child) {
       margin-bottom: 10.5px;

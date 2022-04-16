@@ -1,12 +1,12 @@
 .benefits {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
 
   @media (max-width: 1024px) {
-    align-items: flex-start;
     flex-direction: column;
+    align-items: flex-start;
     margin: 0 auto;
   }
 
@@ -21,9 +21,9 @@
 
     svg {
       display: block;
+      margin-right: 20px;
       width: 80px;
       height: 80px;
-      margin-right: 20px;
 
       @media (max-width: 576px) {
         width: 50px;
