@@ -1,7 +1,8 @@
 .hero {
+
   &__container {
     padding-top: 90px;
-    padding-bottom: 120px;
+    padding-bottom: 99px;
 
     @media (max-width: 1024px) {
       padding-top: 40px;
@@ -10,7 +11,11 @@
 
     @media (max-width: 576px) {
       padding-top: 0;
-      padding-bottom: 30px;
+      padding-bottom: 20px;
+    }
+
+    @media (max-width: 375px) {
+      padding-bottom: 10px;
     }
   }
 
@@ -24,6 +29,7 @@
 
   &__search-form {
     margin: 0 auto 22px;
+    max-width: 915px;
 
     @media (max-width: 1024px) {
       max-width: 700px;
@@ -42,12 +48,23 @@
     margin: 0 auto 80px;
     max-width: 915px;
 
+    @media (max-width: 1024px) {
+      max-width: 700px;
+      margin-bottom: 60px;
+    }
+
     @media (max-width: 768px) {
       margin-bottom: 50px;
     }
 
     @media (max-width: 576px) {
       margin-bottom: 30px;
+    }
+  }
+
+  &__benefits {
+    @media (max-width: 1024px) {
+      max-width: 700px;
     }
   }
 }

@@ -12,6 +12,16 @@
   &--md {
     font-size: 28px;
     line-height: 34px;
+
+    @media (max-width: 576px) {
+      font-size: 22px;
+      line-height: 26px;
+    }
+
+    @media (max-width: 375px) {
+      font-size: 18px;
+      line-height: 22px;
+    }
   }
 
   &--sm {
