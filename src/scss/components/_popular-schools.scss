@@ -1,0 +1,96 @@
+.popular-schools {
+
+  &__title {
+    margin-bottom: 26px;
+
+    @media (max-width: 576px) {
+      margin-bottom: 20px;
+      font-size: 22px;
+      line-height: 26px;
+    }
+
+    @media (max-width: 375px) {
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+
+  &__content {
+    background-color: #f7f7ff;
+  }
+
+  &__container {
+    padding-top: 35px;
+    padding-bottom: 34px;
+
+    @media (max-width: 576px) {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+  }
+
+  &__slider {
+
+    @media (max-width: 1024px) {
+      overflow: visible;
+    }
+  }
+
+  &__wrapper {
+    flex-direction: row !important;
+
+    .swiper-slide {
+      margin-top: 0 !important;
+      margin-bottom: 30px;
+
+      @media (max-width: 1024px) {
+        width: 200px;
+        margin-bottom: 20px;
+      }
+
+      @media (max-width: 768px) {
+        width: 180px;
+      }
+
+      @media (max-width: 576px) {
+        width: 150px;
+        margin-bottom: 10px;
+      }
+
+      @media (max-width: 375px) {
+        width: 130px;
+      }
+    }
+  }
+}
+
+
+.popular-school {
+  border-radius: 20px;
+  padding: 25px;
+  padding-top: 15px;
+  background-color: #fff;
+
+  @media (max-width: 576px) {
+    padding: 20px 15px 25px;
+  }
+
+  &__image {
+    display: block;
+    margin-bottom: 33px;
+    width: 116px;
+    height: 38px;
+
+    @media (max-width: 576px) {
+      width: 88px;
+      height: 27px;
+    }
+  }
+
+  &__testimonials {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 12px;
+    color: #708497;
+  }
+}
