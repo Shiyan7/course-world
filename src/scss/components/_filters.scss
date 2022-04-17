@@ -23,9 +23,9 @@
   }
 
   &__modile-reset {
+    border-radius: 6px;
     padding: 10px;
     min-width: auto;
-    border-radius: 6px;
     color: #8288ab;
 
     @media (max-width: 576px) {
@@ -84,15 +84,15 @@
 
   &__apply {
     display: none;
+    justify-content: center;
+    margin-top: auto;
+    border-radius: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
 
     @media (max-width: 1024px) {
-      padding-top: 15px;
-      padding-bottom: 15px;
       display: inline-flex;
-      justify-content: center;
-      margin-top: auto;
-      border-radius: 0;
-      width: 100%;
     }
 
     @media (max-width: 576px) {
@@ -110,19 +110,19 @@
 
   &__content {
     @media (max-width: 1024px) {
+      margin: 0 auto;
       padding: 0 15px;
       max-width: 600px;
-      margin: 0 auto;
     }
   }
 
   @media (max-width: 1024px) {
     position: fixed;
-    display: flex;
-    flex-direction: column;
     left: 0;
     top: 0;
     z-index: 200;
+    display: flex;
+    flex-direction: column;
     overflow-x: hidden;
     overflow-y: auto;
     width: 100%;
@@ -223,14 +223,14 @@
     border-radius: 6px;
     padding: 5px 10px;
     font-size: 11px;
-    white-space: nowrap;
     line-height: 14px;
+    white-space: nowrap;
 
     svg {
       display: block;
+      margin-left: 8px;
       width: 10px;
       height: 10px;
-      margin-left: 8px;
     }
   }
 }

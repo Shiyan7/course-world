@@ -73,6 +73,11 @@
     margin-bottom: 12px;
     transition: color 0.3s;
 
+    @media (max-width: 576px) {
+      font-size: 14px;
+      line-height: 16px;
+    }
+
     @media (max-width: 375px) {
       font-size: 13px;
       line-height: 24px;
@@ -80,6 +85,12 @@
   }
 
   &__price {
+
+    @media (max-width: 576px) {
+      font-size: 14px;
+      line-height: 16px;
+    }
+
     @media (max-width: 375px) {
       font-size: 14px;
       line-height: 24px;
@@ -148,6 +159,11 @@
       @media (max-width: 768px) {
         margin-right: 20px;
         margin-bottom: 0;
+      }
+
+      @media (max-width: 576px) {
+        font-size: 16px;
+        line-height: 22px;
       }
 
       @media (max-width: 375px) {
