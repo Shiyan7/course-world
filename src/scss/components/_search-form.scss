@@ -106,6 +106,12 @@
     width: 46px;
     height: 46px;
     background-color: var(--color-primary);
+    transition: background-color 0.3s;
+
+    &:hover,
+    &:focus-within {
+      background-color: #2334b2;
+    }
 
     svg {
       display: block;
@@ -156,6 +162,11 @@
     a {
       text-decoration: underline;
       color: var(--color-primary);
+
+      &:hover,
+      &:focus-within {
+        text-decoration: none;
+      }
     }
   }
 }

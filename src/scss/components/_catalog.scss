@@ -11,7 +11,7 @@
 }
 
 .filter {
-  margin-bottom: 36px;
+  margin-bottom: 39px;
   width: 100%;
 
   &.open {
@@ -45,7 +45,7 @@
 
   &-content {
     display: none;
-    margin-top: 13px;
+    margin-top: 11px;
 
     &__item {
       &:not(:last-child) {
@@ -58,7 +58,7 @@
 .filter-slider {
   &__wrapper {
     display: flex;
-    margin-bottom: 15px;
+    margin-bottom: 17.5px;
   }
 
   &__input {

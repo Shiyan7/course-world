@@ -34,7 +34,8 @@
     max-width: 1355px;
 
     &--fluid {
-      max-width: 1800px;
+      // max-width: 1800px;
+      max-width: calc(1800px + (var(--container-offset) * 2));
     }
   }
 

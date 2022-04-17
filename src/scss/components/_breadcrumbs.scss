@@ -17,29 +17,30 @@
     position: relative;
 
     &:not(:last-child) {
-      margin-right: 25px;
-      padding-right: 25px;
-
-      @media (max-width: 576px) {
-        margin-right: 20px;
-        padding-right: 20px;
-      }
+      margin-right: 21px;
+      padding-right: 26px;
 
       &:after {
         content: "";
         position: absolute;
         right: 0;
-        top: 7px;
+        top: 6px;
         border-radius: 100%;
         width: 6px;
         height: 6px;
         background-color: var(--color-text);
         opacity: 0.2;
+
+        @media (max-width: 576px) {
+          top: 7px;
+        }
       }
     }
   }
 
   &__link {
+    font-size: 12px;
+    line-height: 15px;
     color: var(--color-text-light);
     transition: color 0.3s;
 
