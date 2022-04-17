@@ -1,96 +1,47 @@
 .burger {
-  --burger-width: 32px;
-  --burger-height: 32px;
-  --burger-line-width: 10px;
-  --burger-line-height: 2px;
-  --top-offset: 10px;
-  --left-offset: 9px;
-  --duration: 0.3s ease-in-out;
-
   position: relative;
-  border: none;
+  display: none;
   border-radius: 100%;
-  padding: 0;
-  width: var(--burger-width);
-  height: var(--burger-height);
-  box-shadow: 0 2px 8px rgba(27, 39, 90, 0.12);
-  color: var(--color-text);
+  width: 50px;
+  height: 50px;
+  box-shadow: 0 2px 8px rgba(27, 39, 90, 12%);
   background-color: #fff;
-  cursor: pointer;
 
-  @media (min-width: 577px) {
-    --burger-width: 50px;
-    --burger-height: 50px;
-    --burger-line-width: 13px;
-    --burger-line-height: 3px;
-    --top-offset: 16px;
-    --left-offset: 15px;
-  }
+  &.burger--active {
+    .burger__icon-opened {
+      transform: translate(-50%, -50%) scale(0);
+    }
 
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    left: var(--left-offset);
-    border-radius: 5px;
-    width: var(--burger-line-width);
-    height: var(--burger-line-height);
-    background-color: currentColor;
-    transition: transform var(--duration), top var(--duration), width var(--duration), left var(--duration);
-  }
-
-  &::before {
-    top: var(--top-offset);
-    width: 14px;
-
-    @media (min-width: 577px) {
-      width: 20px;
+    .burger__icon-closed {
+      transform: translate(-50%, -50%) scale(1);
     }
   }
 
-  &::after {
-    top: calc(100% - var(--burger-line-height) - var(--top-offset));
-  }
-
-  &__line {
+  &__icon {
     position: absolute;
-    left: var(--left-offset);
     top: 50%;
-    border-radius: 5px;
-    width: var(--burger-line-width);
-    height: var(--burger-line-height);
-    background-color: currentColor;
-    transform: translateY(-50%);
-    transition: opacity var(--duration), visibility var(--duration);
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 20px;
+    height: 20px;
+
+    &-opened,
+    &-closed {
+      transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+    }
+
+    &-closed {
+      transform: translate(-50%, -50%) scale(0);
+    }
+
+    @media (max-width: 576px) {
+      width: 16px;
+      height: 16px;
+    }
   }
 
-  &--active {
-    &::before {
-      top: 15.5px;
-      transform: rotate(45deg);
-
-      @media (min-width: 577px) {
-        left: 12.5px;
-        top: 24.5px;
-        width: 25px;
-      }
-    }
-
-    &::after {
-      top: 16px;
-      width: 14px;
-      transform: rotate(-45deg) translateY(-50%);
-
-      @media (min-width: 577px) {
-        left: 12.5px;
-        top: 25px;
-        width: 25px;
-      }
-    }
-
-    .burger__line {
-      opacity: 0;
-      visibility: hidden;
-    }
+  @media (max-width: 576px) {
+    width: 32px;
+    height: 32px;
   }
 }

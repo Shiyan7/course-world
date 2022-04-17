@@ -1,7 +1,12 @@
 <header class="header">
   <div class="container header__container">
-    <button class="burger header__burger" aria-label="Открыть меню" aria-expanded="false"  data-burger>
-      <span class="burger__line"></span>
+    <button class="btn-reset burger header__burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+      <svg class="burger__icon burger__icon-opened">
+        <use xlink:href="img/sprite.svg#burger"></use>
+      </svg>
+      <svg class="burger__icon burger__icon-closed">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
     </button>
     <a href="/" class="header__logo">
       <img width="251" height="44" src="img/logo.svg" alt="CourseWorld">

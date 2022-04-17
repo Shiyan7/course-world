@@ -1,8 +1,13 @@
 <header class="header">
   <div class="container header__container header__container--fluid">
     <div class="header__left">
-      <button class="burger header__burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
-        <span class="burger__line"></span>
+      <button class="btn-reset burger header__burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+        <svg class="burger__icon burger__icon-opened" aria-hidden="true">
+          <use xlink:href="img/sprite.svg#burger"></use>
+        </svg>
+        <svg class="burger__icon burger__icon-closed" aria-hidden="true">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
       </button>
       <a href="/" class="header__logo">
         <img width="251" height="44" src="img/logo.svg" alt="CourseWorld">
@@ -602,13 +607,23 @@
         </div>
       </div>
     </div>
-    <form class="search-form header__search-form validate-form" action="#">
-      <input class="input-reset search-form__input validate-input" type="search" name="s" id="validate-input" placeholder="Введите тему или название курса">
-      <button class="btn-reset search-form__btn" aria-label="Поиск...">
-        <svg aria-hidden="true">
-          <use xlink:href="img/sprite.svg#search"></use>
-        </svg>
-      </button>
-    </form>
+    <div class="search-window">
+      <form class="search-form header__search-form validate-form" action="#">
+        <input class="input-reset search-form__input validate-input" type="search" name="s" id="validate-input" placeholder="Введите тему или название курса">
+        <button class="btn-reset search-form__btn" aria-label="Поиск...">
+          <svg aria-hidden="true">
+            <use xlink:href="img/sprite.svg#search"></use>
+          </svg>
+        </button>
+      </form>
+    </div>
+    <button class="btn-reset search-btn">
+      <svg class="search-btn__icon search-btn__icon-opened" aria-hidden="true">
+        <use xlink:href="img/sprite.svg#search"></use>
+      </svg>
+      <svg class="search-btn__icon search-btn__icon-closed" aria-hidden="true">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
   </div>
 </header>

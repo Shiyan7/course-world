@@ -8,13 +8,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const filters = document.querySelector(".filters");
 
   function toggleFilters() {
-    this.classList.add("open");
     filters.classList.add("open");
     disableScroll()
   }
 
   function hiddenFilters() {
-    this.classList.remove("open");
     filters.classList.remove("open");
     enableScroll()
   }
