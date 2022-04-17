@@ -7,5 +7,5 @@ document.addEventListener("DOMContentLoaded", () => {
     searchWindow.classList.toggle('open')
   }
 
-  searchBtn.addEventListener("click", toggleSearchWindow)
+  searchBtn?.addEventListener("click", toggleSearchWindow)
 })
