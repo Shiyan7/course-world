@@ -4,7 +4,7 @@
   font-size: 24px;
   line-height: 30px;
 
-  &--lg {
+  &--xl {
     font-size: 36px;
     line-height: 44px;
 
@@ -19,24 +19,49 @@
     }
   }
 
-  &--md {
-    font-size: 28px;
-    line-height: 34px;
+  &--lg {
+    font-size: 30px;
+    line-height: 37px;
 
-    @media (max-width: 576px) {
+    @media (max-width: 768px) {
       font-size: 22px;
       line-height: 26px;
     }
 
+    @media (max-width: 576px) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  &--md {
+    font-size: 26px;
+    line-height: 32px;
+
+    @media (max-width: 576px) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
     @media (max-width: 375px) {
-      font-size: 18px;
-      line-height: 22px;
+      font-size: 14px;
+      line-height: 18px;
     }
   }
 
   &--sm {
     font-size: 18px;
     line-height: 22px;
+
+    @media (max-width: 576px) {
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    @media (max-width: 375px) {
+      font-size: 12px;
+      line-height: 20px;
+    }
   }
 
   &--center {

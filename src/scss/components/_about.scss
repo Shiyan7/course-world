@@ -1,0 +1,133 @@
+.about {
+
+  &__container {
+    padding-bottom: 50px;
+  }
+
+  &__title {
+    margin-bottom: 35px;
+
+    @media (max-width: 768px) {
+      margin-bottom: 25px;
+    }
+
+    @media (max-width: 576px) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 10px;
+  }
+
+  &__list {
+    margin-top: 0;
+    margin-bottom: 50px;
+
+    @media (max-width: 576px) {
+      margin-bottom: 30px;
+    }
+
+    &--line {
+      padding-left: 22px;
+
+      @media (max-width: 576px) {
+        padding-left: 17px;
+      }
+      li {
+        padding-left: 20px;
+        list-style-type: '—';
+
+        @media (max-width: 576px) {
+          padding-left: 10px;
+        }
+      }
+    }
+
+    &--numbered {
+      padding-left: 22px;
+
+      @media (max-width: 576px) {
+        padding-left: 17px;
+      }
+
+      li {
+        padding-left: 20px;
+
+        @media (max-width: 576px) {
+          padding-left: 10px;
+        }
+      }
+    }
+
+    &--circle {
+      padding-left: 22px;
+
+      @media (max-width: 576px) {
+        padding-left: 14px;
+      }
+
+      li {
+        padding-left: 20px;
+
+        @media (max-width: 576px) {
+          padding-left: 10px;
+        }
+      }
+    }
+
+    li {
+      font-size: 15px;
+      line-height: 28px;
+
+      @media (max-width: 576px) {
+        font-size: 13px;
+        line-height: 26px;
+      }
+
+      @media (max-width: 375px) {
+        font-size: 11px;
+        line-height: 22px;
+      }
+
+      &::marker {
+        appearance: none;
+        font-weight: 600;
+        font-size: 18px;
+        color: var(--color-primary);
+
+        @media (max-width: 576px) {
+          font-size: 14px;
+        }
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+
+        @media (max-width: 576px) {
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+
+  &__desc {
+    margin: 0;
+    font-size: 15px;
+    line-height: 28px;
+
+    @media (max-width: 576px) {
+      font-size: 13px;
+      line-height: 26px;
+    }
+
+    @media (max-width: 375px) {
+      font-size: 11px;
+      line-height: 22px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}
