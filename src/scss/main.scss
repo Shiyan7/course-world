@@ -4,7 +4,7 @@
 @import "fonts";
 @import "settings";
 
-// подключения компонентов страницы
+// ui components
 @import "./components/g-link";
 @import "./components/g-checkbox";
 @import "./components/burger";
@@ -15,6 +15,10 @@
 @import "./components/g-input";
 @import "./components/g-btn";
 @import "./components/g-radio";
+@import "./components/sort-by";
+@import "./components/g-pagination";
+
+//blocks
 @import "./components/header";
 @import "./components/nav";
 @import "./components/hero";
@@ -26,3 +30,5 @@
 @import "./components/categories";
 @import "./components/category";
 @import "./components/catalog";
+@import "./components/filters";
+@import "./components/card";
