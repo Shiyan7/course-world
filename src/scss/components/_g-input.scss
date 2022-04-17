@@ -7,13 +7,66 @@
   line-height: 17px;
   color: var(--color-text);
 
+  &-label {
+    position: relative;
+    display: block;
+
+    .just-validate-error-label {
+      padding-left: 0;
+    }
+  }
+
+  &-textarea {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-height: 100px;
+    resize: vertical;
+
+    &.is-invalid {
+      padding-top: 9px;
+      padding-bottom: 9px;
+    }
+
+    &:focus,
+    &:focus-within {
+      padding-top: 9px;
+      padding-bottom: 9px;
+    }
+  }
+
+  &__caption {
+    position: absolute;
+    left: 20px;
+    font-size: 11px;
+    line-height: 18px;
+    margin-top: -9px;
+    padding: 0 2px;
+    color: #919eab;
+    background-color: #fff;
+
+    span {
+      color: var(--color-red);
+    }
+  }
+
   &:focus,
   &:focus-within {
     border: 2px solid var(--color-primary);
-    padding: 0 14px;
+    padding-left: 14px;
+    padding-right: 14px;
   }
 
   &::placeholder {
     color: #a5a5ad;
+  }
+
+  &.is-invalid {
+    border: 2px solid var(--color-red);
+    padding-left: 14px;
+    padding-right: 14px;
+
+    &::placeholder {
+      color: var(--color-red);
+    }
   }
 }

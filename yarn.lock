@@ -5510,7 +5510,7 @@ just-debounce@^1.0.0:
   resolved "https://registry.yarnpkg.com/just-debounce/-/just-debounce-1.1.0.tgz#2f81a3ad4121a76bc7cb45dbf704c0d76a8e5ddf"
   integrity sha512-qpcRocdkUmf+UTNBYx5w6dexX5J31AKK1OmPwH630a83DdVVUIngk55RSAiIGpQyoH0dlr872VHfPjnQnK1qDQ==
 
-just-validate@^3.3.3:
+just-validate@^3.5.1:
   version "3.5.1"
   resolved "https://registry.yarnpkg.com/just-validate/-/just-validate-3.5.1.tgz#985499e726233ef142fdc4f4f52e8a15bc6d6d21"
   integrity sha512-NKuUFjhd/O7fi4Y/n27VUeXv1dDfkIUx5MeDOs+fW7yXmDfH37MvYT43c+GxYx9DXUOymtnoK9dGINfAKKssnQ==
