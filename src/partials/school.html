@@ -322,9 +322,39 @@
           </ul>
         </div>
         <div class="school__content" id="give-feedback">
-          <form action="#" class="feedback-form school__add-review">
+          <form action="#" class="feedback-form school__feedback-form">
             <h2 class="g-title g-title--xl feedback-form__title">Добавить отзыв</h2>
             <div class="feedback-form__items">
+              <div class="feedback-form__item feedback-rating">
+                <div class="feedback-rating__top">
+                  <span class="feedback-rating__caption">
+                    Ваша оценка
+                    <span>*</span>
+                  </span>
+                  <div class="g-rating validate-rating">
+                    <input class="g-rating__input input-reset" type="radio" id="star5" name="rating" value="5" />
+                    <label class="g-rating__label" for="star5"></label>
+                    <input class="g-rating__input input-reset" type="radio" id="star4half" name="rating" value="4 с половиной" />
+                    <label class="g-rating__label g-rating__label--half" for="star4half"></label>
+                    <input class="g-rating__input input-reset" type="radio" id="star4" name="rating" value="4" />
+                    <label class="g-rating__label" for="star4"></label>
+                    <input class="g-rating__input input-reset" type="radio" id="star3half" name="rating" value="3 с половиной" />
+                    <label class="g-rating__label g-rating__label--half" for="star3half"></label>
+                    <input class="g-rating__input input-reset" type="radio" id="star3" name="rating" value="3" />
+                    <label class="g-rating__label" for="star3"></label>
+                    <input class="g-rating__input input-reset" type="radio" id="star2half" name="rating" value="2 с половиной" />
+                    <label class="g-rating__label g-rating__label--half" for="star2half"></label>
+                    <input class="g-rating__input input-reset" type="radio" id="star2" name="rating" value="2" />
+                    <label class="g-rating__label" for="star2"></label>
+                    <input class="g-rating__input input-reset" type="radio" id="star1half" name="rating" value="1 с половиной" />
+                    <label class="g-rating__label g-rating__label--half" for="star1half"></label>
+                    <input class="g-rating__input input-reset" type="radio" id="star1" name="rating" value="1" />
+                    <label class="g-rating__label" for="star1"></label>
+                    <input class="g-rating__input input-reset" type="radio" id="starhalf" name="rating" value="половина" />
+                    <label class="g-rating__label g-rating__label--half" for="starhalf"></label>
+                  </div>
+                </div>
+              </div>
               <label class="g-input-label feedback-form__item">
                 <span class="g-input__caption">
                   Имя

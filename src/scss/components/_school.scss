@@ -242,9 +242,13 @@
     }
   }
 
-  &__add-review {
+  &__feedback-form {
     border: 1px solid #eaecfa;
     box-shadow: none;
+
+    .feedback-form__title {
+      margin-bottom: 20px;
+    }
   }
 
   &__content-top {

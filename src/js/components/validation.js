@@ -3,7 +3,7 @@ import JustValidate from 'just-validate';
 const initValidation = form => {
 
   const defaultErrorMessage = 'это поле должно быть заполнено';
-  const contactFormEl = document.querySelector('.feedback-form')
+  const feedbackFormEl = document.querySelector('.feedback-form')
 
   const validation = new JustValidate(form, {
     errorFieldCssClass: 'is-invalid',
@@ -21,15 +21,19 @@ const initValidation = form => {
       form?.submit()
     });
 
-  if(contactFormEl) {
-    const contactFormValidation = new JustValidate(contactFormEl, {
+  if(feedbackFormEl) {
+    const feedbackFormValidation = new JustValidate(feedbackFormEl, {
       errorFieldCssClass: 'is-invalid',
       errorLabelStyle: {
         color: '#F8483A',
       },
+      errorFieldStyle: {
+        border: '2px solid #F8483A',
+        backgroundColor: '#FFEDEC'
+      },
     })
 
-    contactFormValidation
+    feedbackFormValidation
       .addField('.validate-input', [{
         rule: 'required',
         errorMessage: defaultErrorMessage,
@@ -44,12 +48,13 @@ const initValidation = form => {
           errorMessage: 'введите коректный email',
         }
       ])
+      .addRequiredGroup('.validate-rating', false)
       .addField('.validate-message', [{
         rule: 'required',
         errorMessage: defaultErrorMessage,
       }])
       .onSuccess((ev) => {
-        contactFormEl?.submit()
+        feedbackFormEl?.submit()
       });
   }
 }

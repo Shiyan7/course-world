@@ -102,3 +102,23 @@
     }
   }
 }
+
+.feedback-rating {
+
+  &__top {
+    display: flex;
+    align-items: center;
+  }
+
+  &__caption {
+    display: block;
+    margin-right: 9px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #919eab;
+
+    span {
+      color: var(--color-red);
+    }
+  }
+}
