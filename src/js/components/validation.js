@@ -16,7 +16,10 @@ const initValidation = form => {
     .addField('.validate-input', [{
       rule: 'required',
       errorMessage: defaultErrorMessage
-    }]);
+    }])
+    .onSuccess((ev) => {
+      form?.submit()
+    });
 
   if(contactFormEl) {
     const contactFormValidation = new JustValidate(contactFormEl, {

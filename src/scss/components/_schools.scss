@@ -1,0 +1,21 @@
+.schools {
+  &__container {
+    padding-bottom: 80px;
+
+    @media (max-width: 768px) {
+      padding-bottom: 50px;
+    }
+
+    @media (max-width: 576px) {
+      padding-bottom: 30px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 31px;
+
+    @media (max-width: 576px) {
+      margin-bottom: 18px;
+    }
+  }
+}

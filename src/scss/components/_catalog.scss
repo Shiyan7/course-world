@@ -44,13 +44,6 @@
     }
   }
 
-  &__more {
-    justify-content: center;
-    margin-top: 5px;
-    margin-bottom: 20px;
-    width: 100%;
-  }
-
   &__pagination {
     margin-bottom: 61px;
 
@@ -67,5 +60,16 @@
 
   @media (max-width: 1024px) {
     display: block;
+  }
+}
+
+.load-more {
+  justify-content: center;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  width: 100%;
+
+  @media (max-width: 576px) {
+    font-weight: 400;
   }
 }
