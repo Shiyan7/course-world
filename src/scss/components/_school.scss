@@ -243,12 +243,8 @@
   }
 
   &__add-review {
-    box-shadow: none;
     border: 1px solid #eaecfa;
-
-    .feedback-form__policy p {
-      max-width: initial;
-    }
+    box-shadow: none;
   }
 
   &__content-top {
