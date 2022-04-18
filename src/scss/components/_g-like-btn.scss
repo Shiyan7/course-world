@@ -1,0 +1,37 @@
+.g-like-btn {
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  padding: 6px 20px;
+  font-size: 14px;
+  line-height: 22px;
+  color: #929bb4;
+  background-color: #f4f4f5;
+  transition: background-color 0.3s, color 0.3s;
+
+  &.active {
+    color: #27ae60;
+    background-color: #ecf5f0;
+  }
+
+  &--dislike {
+
+    &.active {
+      color: #eb5757;
+      background-color: #feeaea;
+    }
+
+
+    svg {
+      transform: rotate(180deg);
+    }
+  }
+
+  svg {
+    display: block;
+    margin-right: 8px;
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+  }
+}

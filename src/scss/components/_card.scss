@@ -153,6 +153,7 @@
   }
 
   &__price {
+    font-weight: 700;
 
     @media (max-width: 576px) {
       font-size: 14px;
@@ -243,6 +244,8 @@
 
     &__icon {
       display: block;
+      width: 96px;
+      height: 16px;
       margin-bottom: 12px;
 
       @media (max-width: 768px) {

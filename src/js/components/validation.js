@@ -3,7 +3,7 @@ import JustValidate from 'just-validate';
 const initValidation = form => {
 
   const defaultErrorMessage = 'это поле должно быть заполнено';
-  const contactFormEl = document.querySelector('.contacts-form')
+  const contactFormEl = document.querySelector('.feedback-form')
 
   const validation = new JustValidate(form, {
     errorFieldCssClass: 'is-invalid',
@@ -17,7 +17,7 @@ const initValidation = form => {
       rule: 'required',
       errorMessage: defaultErrorMessage
     }])
-    .onSuccess((ev) => {
+    .onSuccess(() => {
       form?.submit()
     });
 

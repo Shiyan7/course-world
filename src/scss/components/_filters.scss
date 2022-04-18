@@ -26,7 +26,7 @@
     border-radius: 6px;
     padding: 10px;
     min-width: auto;
-    color: #8288ab;
+    color: var(--color-text-light);
 
     @media (max-width: 576px) {
       padding: 5px;
