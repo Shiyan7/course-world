@@ -43,6 +43,15 @@
     .card__title {
       color: var(--color-primary);
     }
+
+    .card__btn {
+      color: #fff;
+      background-color: var(--color-primary);
+
+      svg {
+        fill: #fff;
+      }
+    }
   }
 
   &__left {
