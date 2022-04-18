@@ -148,7 +148,7 @@
     }
 
     .filter-content {
-      display: block;
+      display: flex;
     }
   }
 
@@ -172,6 +172,8 @@
 
   &-content {
     display: none;
+    align-items: flex-start;
+    flex-direction: column;
     margin-top: 11px;
 
     &__item {
@@ -187,6 +189,8 @@
 }
 
 .filter-slider {
+  width: 100%;
+
   &__wrapper {
     display: flex;
     margin-bottom: 17.5px;

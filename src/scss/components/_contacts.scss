@@ -4,10 +4,6 @@
     padding-bottom: 84px;
 
     @media (max-width: 576px) {
-      padding-bottom: 50px;
-    }
-
-    @media (max-width: 375px) {
       padding-bottom: 25px;
     }
   }
@@ -94,14 +90,14 @@
     border-radius: 10px;
     padding: 30px;
     padding-bottom: 43px;
-    max-width: 810px;
     width: 100%;
+    max-width: 810px;
     box-shadow: 0 2px 25px rgba(13, 36, 128, 15%);
     background-color: #fff;
 
     @media (max-width: 576px) {
       margin: 0 calc((var(--container-offset) / -100) * 100);
-      border-radius: 0;
+      padding: 30px 15px;
       width: calc(100% + calc(var(--container-offset) * 2));
     }
 
