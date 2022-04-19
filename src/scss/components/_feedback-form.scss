@@ -108,6 +108,10 @@
   &__top {
     display: flex;
     align-items: center;
+
+    @media (max-width: 576px) {
+      justify-content: space-between;
+    }
   }
 
   &__caption {
