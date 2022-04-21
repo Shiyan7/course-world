@@ -238,8 +238,7 @@
       height: 10px;
     }
 
-    &:hover,
-    &:focus-within {
+    &:hover {
       border: 1px solid #fff;
       box-shadow: 0 0 5px rgba(13, 36, 128, 15%);
     }

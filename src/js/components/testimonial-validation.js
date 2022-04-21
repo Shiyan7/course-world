@@ -1,7 +1,11 @@
 import vars from '../_vars';
 import JustValidate from "just-validate";
+import GraphModal from '../vendor/graph-modal'
 
 document.addEventListener("DOMContentLoaded", () => {
+
+  const modal = new GraphModal();
+
   const testimonialFormEl = document.querySelector('#testimonial-form')
 
   if (testimonialFormEl) {
@@ -35,8 +39,14 @@ document.addEventListener("DOMContentLoaded", () => {
         rule: 'required',
         errorMessage: vars.defaultErrorMessage,
       }])
-      .onSuccess(() => {
-        testimonialFormEl?.submit()
+      .onFail(() => {
+        modal?.close()
+      })
+      .onSuccess(e => {
+        modal?.open()
+        testimonialFormEl?.reset()
+
+        // testimonialFormEl?.submit()
       });
   }
 })

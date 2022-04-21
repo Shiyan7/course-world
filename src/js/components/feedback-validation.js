@@ -1,7 +1,11 @@
 import vars from '../_vars';
 import JustValidate from "just-validate";
+import GraphModal from '../vendor/graph-modal'
 
 document.addEventListener("DOMContentLoaded", () => {
+
+  const modal = new GraphModal();
+
   const feedbackFormEl = document.querySelector('#feedback-form')
 
   if (feedbackFormEl) {
@@ -34,8 +38,14 @@ document.addEventListener("DOMContentLoaded", () => {
         rule: 'required',
         errorMessage: vars.defaultErrorMessage,
       }])
-      .onSuccess(() => {
-        feedbackFormEl?.submit()
+      .onFail(() => {
+        modal?.close()
+      })
+      .onSuccess(e => {
+        modal?.open()
+        feedbackFormEl?.reset()
+
+        // feedbackFormEl?.submit()
       });
   }
 })
