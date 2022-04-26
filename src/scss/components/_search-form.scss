@@ -67,10 +67,10 @@
     color: var(--color-text);
     background: #fff;
 
-    &:focus ~ .search-result {
+    /* &:focus ~ .search-result {
       opacity: 1;
       visibility: visible;
-    }
+    } */
 
     &.is-invalid {
       border: 2px solid var(--color-red);
