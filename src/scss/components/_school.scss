@@ -200,6 +200,7 @@
       margin-left: calc((var(--container-offset) / -100) * 100);
       padding: 0 15px;
       width: calc(100% + calc(var(--container-offset) * 2));
+      justify-content: space-between;
     }
 
     @media (max-width: 576px) {
@@ -253,6 +254,13 @@
 
     .feedback-form__title {
       margin-bottom: 20px;
+    }
+
+    @media (max-width: 768px) {
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 2px 25px rgba(13, 36, 128, 15%);
+      background-color: #fff;
     }
   }
 
