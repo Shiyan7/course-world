@@ -212,11 +212,9 @@
   }
 
   &-rating {
-    display: none;
 
     @media (max-width: 768px) {
-      // display: flex;
-      display: none;
+      display: flex;
       align-items: center;
     }
 
@@ -279,4 +277,9 @@
       }
     }
   }
+}
+
+/* Потом удалить */
+.category .card-rating {
+  display: none;
 }
